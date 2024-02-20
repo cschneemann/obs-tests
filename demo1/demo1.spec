@@ -12,6 +12,7 @@ BuildRequires:  perl
 
 %description
 This package contains a hello world script.
+And it smiles.
 
 %prep
 
