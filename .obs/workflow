@@ -1,0 +1,8 @@
+workflow:
+  steps:
+    - branch_package:
+        source_project: Examples
+        source_package: demo1
+        target_project: Workflows:Examples
+  filters:
+    event: pull_request
