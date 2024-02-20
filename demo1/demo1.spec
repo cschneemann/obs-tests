@@ -1,7 +1,7 @@
 Name:           beispiel1
 Version:        0.23.5
 Release:        0
-Summary:        Beispiel1
+Summary:        Demo1
 License:        GPLv3
 Group:          Development/Libraries/Perl
 Url:            http://www.b1-systems.de
