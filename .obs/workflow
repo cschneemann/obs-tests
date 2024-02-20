@@ -5,4 +5,4 @@ workflow:
         source_package: demo1
         target_project: Workflows:Examples
   filters:
-    event: pull_request
+    event: push
