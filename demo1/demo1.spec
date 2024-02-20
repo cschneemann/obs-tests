@@ -1,5 +1,5 @@
 Name:           beispiel1
-Version:        0.23.5
+Version:        0.42.23
 Release:        0
 Summary:        Demo1
 License:        GPLv3
