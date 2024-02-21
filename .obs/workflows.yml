@@ -4,7 +4,6 @@ workflow:
         source_project: Examples
         source_package: demo1
         target_project: Examples:DEV
-submit_tag_to_product:
   #  steps:
   #    - branch_package:
   #        source_project: Examples
