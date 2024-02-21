@@ -2,12 +2,11 @@ submit_request:
   steps:
     - branch_package:
         source_project: Eco:10
-        source_package: demo1
+        source_package: %{SCM_REPOSITORY_NAME}
         target_project: Eco:10:DEV
-        target_package: demo1
     - submit_request:
         source_project: Eco:10:DEV
-        source_package: demo1
+        source_package: %{SCM_REPOSITORY_NAME}
         target_project: Eco:10
           #target_package: demo1_new
           #description: 'New version has been tagged'
