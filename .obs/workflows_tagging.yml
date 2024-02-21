@@ -1,14 +1,14 @@
 submit_request:
   steps:
     - branch_package:
-        source_project: Examples
+        source_project: Eco:10
         source_package: demo1
-        target_project: Examples:DEV
+        target_project: Eco:10:DEV
     - submit_request:
-        source_project: Examples:DEV
+        source_project: Eco:10:DEV
         source_package: demo1
         target_project: Eco:10
-          #target_package: demo1
+          #target_package: demo1_new
           #description: 'New version has been tagged'
   filters:
     event: tag_push
