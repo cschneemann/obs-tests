@@ -2,8 +2,9 @@ workflow:
   steps:
     - branch_package:
         source_project: Eco:10
-        source_package: %{SCM_REPOSITORY_NAME}
+        source_package: demo1
         target_project: Eco:10:DEV
+        target_package: %{SCM_REPOSITORY_NAME} 
     - submit_request:
         source_project: Eco:10:DEV
         source_package: %{SCM_REPOSITORY_NAME}
