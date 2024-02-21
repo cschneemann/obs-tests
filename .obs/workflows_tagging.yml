@@ -1,14 +1,9 @@
-workflow:
+submit_request:
   steps:
     - branch_package:
         source_project: Examples
         source_package: demo1
         target_project: Examples:DEV
-  #  steps:
-  #    - branch_package:
-  #        source_project: Examples
-  #        source_package: demo1
-  #        target_project: Workflows:Examples
     - submit_request:
         source_project: Examples:DEV
         source_package: demo1
