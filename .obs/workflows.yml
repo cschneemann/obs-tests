@@ -3,7 +3,7 @@ workflow:
     - branch_package:
         source_project: Examples
         source_package: demo1
-        target_project: Examples:Dev
+        target_project: Examples:DEV
 submit_tag_to_product:
   #  steps:
   #    - branch_package:
@@ -11,7 +11,7 @@ submit_tag_to_product:
   #        source_package: demo1
   #        target_project: Workflows:Examples
     - submit_request:
-        source_project: Examples:Dev
+        source_project: Examples:DEV
         source_package: demo1
         target_project: Eco:10
           #target_package: demo1
