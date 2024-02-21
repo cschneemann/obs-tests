@@ -4,5 +4,14 @@ workflow:
         source_project: Examples
         source_package: demo1
         target_project: Workflows:Examples
-#  filters:
-#    event: push
+
+submit_tag_to_product:
+  steps:
+    - submit_request:
+        source_project: Examples
+        source_package: demo1
+        target_project: Eco:10
+          #target_package: demo1
+          #description: 'New version has been tagged'
+  filters:
+    event: tag_push
