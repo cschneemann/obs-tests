@@ -9,6 +9,7 @@ workflow:
         source_project: Eco:10:DEV
         source_package: %{SCM_REPOSITORY_NAME}
         target_project: Eco:10
+        target_package: %{SCM_REPOSITORY_NAME} 
           #target_package: demo1_new
           #description: 'New version has been tagged'
   filters:
