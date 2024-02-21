@@ -1,9 +1,10 @@
 submit_request:
   steps:
-    #    - branch_package:
-    #        source_project: Eco:10
-    #        source_package: demo1
-    #        target_project: Eco:10:DEV
+    - branch_package:
+        source_project: Eco:10
+        source_package: demo1
+        target_project: Eco:10:DEV
+        target_package: demo1
     - submit_request:
         source_project: Eco:10:DEV
         source_package: demo1
