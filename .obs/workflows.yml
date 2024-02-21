@@ -1,8 +1,14 @@
-workflow:
+submit_request:
   steps:
     - branch_package:
-        source_project: Examples
-        source_package: demo1
-        target_project: Examples:DEV
-          #  filters:
-          #    event: tag_push
+        source_project: Eco:10
+        source_package: %{SCM_REPOSITORY_NAME}
+        target_project: Eco:10:DEV
+    - submit_request:
+        source_project: Eco:10:DEV
+        source_package: %{SCM_REPOSITORY_NAME}
+        target_project: Eco:10
+          #target_package: demo1_new
+          #description: 'New version has been tagged'
+  filters:
+    event: tag_push
