@@ -1,4 +1,4 @@
-submit_request:
+workflow:
   steps:
     - branch_package:
         source_project: Eco:10
